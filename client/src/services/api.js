@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "hhttps://campus-serve-backend.onrender.com",
+  baseURL:
+    import.meta.env.VITE_API_URL,
 });
 
 export default API;
