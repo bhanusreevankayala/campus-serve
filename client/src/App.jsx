@@ -13,7 +13,6 @@ import EventQR from "./pages/EventQR";
 import Analytics from "./pages/Analytics";
 import JoinEvent from "./pages/JoinEvent";
 import Participants from "./pages/Participants";
-import ScanQR from "./pages/ScanQR";
 
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -110,14 +109,7 @@ function App() {
     </ProtectedRoute>
   }
 />
-<Route
-  path="/scan-qr"
-  element={
-    <ProtectedRoute>
-      <ScanQR />
-    </ProtectedRoute>
-  }
-/>  
+ 
 
     </Routes>
   );
