@@ -55,7 +55,7 @@ function JoinEvent() {
         "Successfully Joined Event"
       );
 
-      navigate("/dashboard");
+      navigate("/events");
 window.location.reload();
 
     } catch (error) {
