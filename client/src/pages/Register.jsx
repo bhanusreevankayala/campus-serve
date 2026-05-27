@@ -35,7 +35,7 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen flex bg-[#f8fafc]">
+    <div className="min-h-screen flex flex-col lg:flex-row bg-[#f8fafc]">
 
       {/* LEFT SECTION */}
       <div className="hidden lg:flex w-1/2 bg-gradient-to-br from-violet-700 via-indigo-700 to-blue-700 text-white relative overflow-hidden">
@@ -89,12 +89,12 @@ function Register() {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="flex-1 flex items-center justify-center px-6 py-10">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 py-6 sm:py-10">
 
         <div className="w-full max-w-lg">
 
           <div className="mb-10">
-            <h2 className="text-5xl font-black text-gray-800">
+            <h2 className="text-3xl sm:text-5xl font-black text-gray-800">
               Create Account
             </h2>
 
@@ -105,7 +105,7 @@ function Register() {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-white shadow-2xl rounded-3xl p-8 border border-gray-100"
+            className="bg-white shadow-2xl rounded-3xl p-5 sm:p-8 border border-gray-100"
           >
 
             {/* Name */}
@@ -184,7 +184,7 @@ function Register() {
 
             {/* Button */}
             <button
-              className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 text-whitepy-3 md:py-4rounded-2xl text-lg font-bold shadow-xl hover:scale-[1.02] transition duration-300"
+              className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-3 md:py-4 rounded-2xltext-lg font-bold shadow-xl hover:scale-[1.02] transition duration-300"
             >
               Create Account
             </button>
